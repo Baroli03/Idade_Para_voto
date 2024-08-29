@@ -3,32 +3,37 @@
 #include <stdlib.h>
 int main() {
 	int idade;
+
+	// Altera a cor do texto do console para roxo com texto claro
 	system("color 5E"); 
 	//0 = Preto        8 = Cinza
-    //1 = Azul         9 = Azul claro
-    //2 = Verde        A = Verde claro
-    //3 = Verde-água   B = Verde-água claro
-    //4 = Vermelho     C = Vermelho claro
-    //5 = Roxo         D = Lilás
-    //6 = Amarelo      E = Amarelo claro
-    //7 = Branco       F = Branco brilhante
-	setlocale(LC_ALL, "PORTUGUESE");
-	
+   	//1 = Azul         9 = Azul claro
+   	//2 = Verde        A = Verde claro
+   	//3 = Verde-água   B = Verde-água claro
+   	//4 = Vermelho     C = Vermelho claro
+   	//5 = Roxo         D = Lilás
+   	//6 = Amarelo      E = Amarelo claro
+    	//7 = Branco       F = Branco brilhante
+
+	// Usado para Aceitar caracteres como acento e "ç" da lingua portuguesa
+	setlocale(LC_ALL, "PORTUGUESE"); 
+
+	// Solicita a Idade do Usuário
 	printf("Digite sua Idade: ");
 	scanf("%i", &idade);
-	
-	if ((idade >= 16 && idade < 18) || (idade >= 70)) // vemos se a idade é maior que 16 e menor que 18 ou  maior que 70 anos onde o voto não é obrigatório
-	{
+
+	// Verifica se a idade está em uma faixa onde o voto não é obrigatório (16 a 17 anos ou 70 anos ou mais)
+	if ((idade >= 16 && idade < 18) || (idade >= 70)) {
 		printf("\nVocê pode votar, mas O voto não é Obrigatório");
 	}
-	
-	else if (idade >= 18 && idade < 70) // aqui vemos se a idade está entre 18 e 70 que o voto é obrigatório
-	{ 
+
+	 // Verifica se a idade está na faixa de foto obrigatório (18 a 69 anos)
+	else if (idade >= 18 && idade < 70) { 
 		printf("\nSeu voto é Obrigatório");
 	}
-	
-	else // caso não esteja entre 16+ não pode votar
-	{
+
+	// Para todas as outras idades (menos 16 anos)
+	else {
 		printf("\nNão pode Votar");
 	}
 }
