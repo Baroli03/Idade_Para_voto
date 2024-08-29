@@ -1,6 +1,6 @@
 # Verifica a Obrigatoriedade do Voto
 
-Esse é um programa simples de C que tem o Objetivo de solicitar a idade do Usuário e informar se o pode votar, se é obrigatório ou opcional.
+Esse é um programa simples de C que tem o Objetivo de solicitar a idade do Usuário e informar se o pode votar e se é obrigatório ou opcional.
 
 ##Funcionalidade
 
