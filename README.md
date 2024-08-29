@@ -14,6 +14,6 @@ Esse √© um programa simples de C que tem o Objetivo de solicitar a idade do Usu√
 
 -Compilador de C
 
-```sh
+[```sh
    git clone https://github.com/Baroli03/Idade_Para_voto.git
-cd Idade_Para_voto
+cd Idade_Para_voto](https://github.com/Baroli03/Idade_Para_voto.git)
